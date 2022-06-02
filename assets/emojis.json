@@ -1,0 +1,64 @@
+{
+  "image":" ",
+  "currency":" ",
+
+  "games":" ",
+  "admin":" ",
+  "configs":" ",
+  "utils":" ", 
+  "success": " ",
+
+  "green":" ",
+  "red":" ",
+
+  "dot": " ",
+  "fail": " ",
+
+  "misc": " ",
+  "mod": " ",
+
+  "pogger1": " ",
+  "heartbreak":" ",
+  
+  "lock": "🔒 ",
+  "unlock": "🔓 ",
+
+  "owner": "🔮 ",
+
+  "discord_employee":" ",
+  "discord_partner": " ",
+  "bughunter_level_1": " ",
+  "bughunter_level_2": " ",
+  "hypesquad_events": " ",
+  "house_brilliance": " ",
+  "house_bravery": " ",
+  "house_balance": " ",
+  "early_supporter": " ",
+  "verified_bot": " ",
+  "verified_developer": " ",
+
+
+  "online": "🟢",
+  "idle": "🟡 ",
+  "offline": "🟤 ",
+  "dnd": "⭕ ",
+  "verify":"✅",
+
+  "voice": "🔊 ",
+
+  "pong": "🔋",
+
+  "altdetector":"🔖",
+  "applications":"📋",
+  "config":"🔧",
+  "utility":"🛠️",
+  "economy":"💰",
+  "fun":"🤡",
+  "images":"🖼️",
+  "information":"📙",
+  "moderation":"🔨",
+  "nsfw":"🔞",
+  "reactionrole":" ",
+  "tickets":"🎟️"
+
+}

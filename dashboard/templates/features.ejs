@@ -1,0 +1,102 @@
+<%- include("partials/head", {arc, bot, user, path, title: "Commands" }) %>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="<%domain%>/js/commands.js"></script>
+      <link rel="stylesheet" href="<%domain%>/css/commands.css">
+   
+  <% var url = urlSite;
+  let prefix = new URL(url).searchParams.get("prefix") 
+  if(!prefix || prefix === null) prefix = `s!`
+  if(prefix.length > 5) prefix = `s!` %> 
+
+
+   </head>
+   
+   <body class="zoomed">
+      </header>
+       <div class="cmdsBox" >
+         <div class="cmdsBoxInner">
+            <header>
+               <div class="menuIcon">
+                  <div class="menuIconDashes">
+         
+               </div>
+            </header>
+            <div class="cmdsBoxCmdsContainer" style="padding-top: 60px">
+               <div class="cmdFilters">
+                  <div>
+                     <h5>Commands</h5>
+                     <div class="cmdFilter active">
+                        <a href=""><img src="https://troybot.xyz/stuff/imgs/Modules/Cmd.png" alt=""> <span class="cmdFilterName">All Commands</span></a>
+                     </div>
+                     <div class="cmdFilter funSelector">
+                        <a href="#fun"><img src="https://troybot.xyz/stuff/imgs/Modules/Fun.svg" alt=""> <span class="cmdFilterName">Fun Commands</span></a>
+                     </div>
+                     <div class="cmdFilter gamesSelector">
+                        <a href="#games"><img src="https://troybot.xyz/stuff/imgs/Modules/Games.png" alt=""> <span class="cmdFilterName">Games</span></a>
+                     </div>
+                     <div class="cmdFilter serverSelector">
+                        <a href="#server"><img src="https://troybot.xyz/stuff/imgs/Modules/Server.png" alt=""> <span class="cmdFilterName">Server Commands</span></a>
+                     </div>
+                     <div class="cmdFilter moderationSelector">
+                        <a href="#moderation"><img src="https://troybot.xyz/stuff/imgs/Modules/Mod.png" alt=""> <span class="cmdFilterName">Moderation Commands</span></a>
+                     </div>
+                     <div class="cmdFilter infoSelector">
+                        <a href="#info"><img src="https://troybot.xyz/stuff/imgs/Modules/Info.png" alt=""> <span class="cmdFilterName">Info Commands</span></a>
+                     </div>
+                     <div class="cmdFilter musicSelector">
+                        <a href="#music"><img src="https://troybot.xyz/stuff/imgs/Modules/Music.png" alt=""> <span class="cmdFilterName">Music Commands</span></a>
+                     </div>
+                      
+                     <div class="separator"></div>
+                     <h5>Other Stuff</h5>
+                     <div class="cmdFilter">
+                        <a href="/invite"><span class="cmdFilterName">Invite Me</span></a>
+                     </div>
+                     <div class="cmdFilter" style="cursor: pointer;">
+                       <a href="/dashboard"><span class="cmdFilterName">Dashboard</a></span>
+                     </div>
+                      <div class="cmdFilter" style="cursor: pointer;">
+                       <a href="/"><span class="cmdFilterName">Home</a></span>
+                     </div>
+                  </div>
+               </div>
+               <main>
+                  <div class="cmds">
+                     <div class="cmdCategory" id="fun">
+                        <h5 class="cmdCategoryName">Fun Commands</h5>
+                        <div class="cmd">
+                           <div class="cmdComps">
+                              <span class="cmdPrefix"><%= prefix %></span>color
+                              <div class="cmdDesc">Shows the color of a given hex code</div>
+                           </div>
+                           <div class="cmdData">
+                              <div class="cmdComps2">
+                                 <div class="cmdUsage cmdMain">
+                                    <span class="cmdCompTitle">Usage:</span>
+                                    <div class="exComp"><span class="cmdsPrefix">...</span>color &lt;hex code&gt;</div>
+                                 </div>
+                                 <div class="cmdExample cmdMain">
+                                    <span class="cmdCompTitle">Example:</span>
+                                    <div class="exComp"><span class="cmdsPrefix">...</span>color #ffffff</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </div>
+              
+               </main>
+               
+            </div>
+         </div>
+    
+      </div>
+  
+   </body>
+  
+</html>
+<%- include("partials/footer") %>
